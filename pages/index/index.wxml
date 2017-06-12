@@ -21,4 +21,11 @@
   </view>
 
   <canvas canvas-id="myCanvas" class="myCanvas" style=" width: {{imageSize.width + 20}}px;  height: {{imageSize.height + 40}}px;" bindtouchmove="touchMove" />
+
+ 
+</view>
+ <view class=".log-list">
+  <text>说明： </text>
+  <text>1. 等级越高说明情绪越强烈 </text>
+  <text>2. 等级为0-100之间 </text> 
 </view>
