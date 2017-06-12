@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+  <text>当前功能： 点击开始，添加图片，识别图片人脸情绪</text>
+  <text>计划功能: 一次只显示一张脸的情绪，滑动依次显示</text>
+</view>

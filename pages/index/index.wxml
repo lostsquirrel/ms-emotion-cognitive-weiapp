@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <!--<view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>-->
+<!--
+  <view>
+  <text>{{chooseImage}}</text>
+  </view>
+  <view class="chooseImage">
+    <image class="image" src="{{chooseImage}}" background-size="cover"></image>
+  </view>
+  -->
+  
+  <view>
+    <button bindtap="startTap">开始</button>
+    <block wx:for="{{results}}" wx:for-item="result" wx:key="*this">
+    <text class="log-item">{{index + 1}}. {{result.result}}</text>
+    </block>
+  </view>
+
+  <canvas canvas-id="myCanvas" class="myCanvas" style=" width: {{imageSize.width + 20}}px;  height: {{imageSize.height + 40}}px;" bindtouchmove="touchMove" />
+</view>
